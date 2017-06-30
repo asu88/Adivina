@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Antonio Ramon Asu">
+
+    <title>Adivina dónde está</title>
+    <link rel="icon" href="images/logo.gif" type="images/gif" sizes="16x16">     
+   
+      <!-- Bootstrap Core CSS -->
+   <link href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
+   <!-- 
+   <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+ <!--   <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+   <!-- <link href="css/style2.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="css/jquery-ui.min.css">
+     <link rel="stylesheet"  href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+   <!--  <link rel="stylesheet" href="css/carousel.css"> -->
+   <!--  <link rel="stylesheet" href="css/style.css"> -->
+     <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body >
+
+  <!--  <div class="row"> -->
+        <div class="logo"><a href=""><img src="images/logo.gif"></a></div>    
+   <div id="menu"><h3>ADIVINA DÓNDE ESTÁ</h3><a href="#help">HELP</a></div>
+
+    <div class="row">
+        <div id = "fotos" class="col-xs-4">
+           
+           <div id="images"></div>
+        </div>
+        
+        <div class="col-xs-4"> 
+            <div id="map"></div> 
+        </div>    
+        <div class="col-xs-3">    
+             <div id="controles" >
+         
+                <table id="tab1">
+                    
+                    <tr>
+                       
+                       <td><button type="button" class="mostrar menu-item light-red">All Games</div></button></td>
+                       
+                       
+                       <td><button type="button" class="play"><img src="images/play.gif"></button></td> 
+                    </tr> 
+                    <tr>
+                  <!-- <td><button type="button" class="play"><img src="images/start.gif"></button></td> -->
+                        <td><button type="button" class="restart"><img src="images/restart.png"></button></td>
+                        <td><button type="button" class="new"><img src="images/new.png"></button></td>
+                    </tr>
+                    <tr>
+                        <td> <button type="button" class="nivel-1 menu-item light-red">Nivel Básico</button></td>
+                        <td> <button type="button" class="nivel-2 menu-item light-orange responsive-2">Nivel Avanzado</button></td>
+                    </tr>
+                       <!--   <li><a href="#"><img src="images/googleplus-icon.png" ></a></li>
+                      <li><a href="#"><img src="images/twitter-icon.png"></a></li> -->
+                </table>
+              <table id="tab2">
+                    <tr> 
+                     <!--  <td><button type="button" class="back">Atrás</button></td> --> 
+                       <td><button type="button" class="historial menu-item green">Historial</button></td>
+                       <td><button type="button" class="disponibles menu-item blue">Disponibles</button></td>
+                       <ul id="gamesHistory">
+
+                       </ul>
+                       <ul id ="games">
+                     <!--     <li> <button type="button" id="capi">capitales</button></li> -->
+                            <li id="capi"><a href="#capi">Capitales</a></li> 
+                            <li id="ciudades"><a href="#ciudades">ciudades</a></li>
+                            <li id="estadios"><a href="#estadios">Estadios</a></li>
+                       </ul>                     
+                  
+                        <p class="puntuacion"></p>                                         
+                         <p class="capi">Jugando por capitales</p>  
+                        <p class="ciudades">Jugando por Ciudades</p>
+                        <p class="estadios">Jugando por Estadios</p>                                                                                                                                                                                                                                                        
+                    </tr>
+              </table>
+               </div>      
+        </div>   
+   </div> <br><br>    <!--ROW -->
+    <div id="other" class="row">
+        <div id="date"class="col-xs-3"></div> 
+        <div id="" class="col-xs-6">
+            <p><h2>SITIOS MÁS VISITADOS</h2></p>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/pista3.JPG" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/pista4.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+         
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/pista1.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+         
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/pista3.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+         
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/pista5.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+         
+            </div>
+          </div>
+        </div>
+
+
+        <div class="item">
+          <img src="images/pista2.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+        </div>   
+    </div>
+    <div id="pie" class="row"><p>Copyrigh@2015</p></div>
+    
+    <!-- Navigation -->
+    <!-- jQuery -->
+ <!--   <script src="js/jquery.js"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+
+   <!-- <script src="js/docs.min.js"></script>
+    <!-- Plugin JavaScript -->
+   <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> -->
+
+ <!--    <script src="js/cbpAnimatedHeader.js"></script> -->
+
+
+    <!-- Custom Theme JavaScript -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript 
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    -->
+     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

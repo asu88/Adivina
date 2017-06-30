@@ -1,0 +1,135 @@
+/* #map{
+   
+     height:100%;
+
+}  */
+
+/*body {
+    padding: 0;
+    margin: 0;
+} */
+
+html, body{
+    height:100%;
+}
+
+body{
+    background:url("../images/fondo2.jpg");
+}
+
+ #map {
+    height:400px;
+    width:450px;
+    max-width:100%;
+    /*
+    height:230%;
+    width:70%; */
+    /*width:60%;
+    margin-left:10%;*/
+   /*float:left;*/ 
+    margin-top:13%;
+}
+
+#controles{
+    margin-top:4%;
+    height:80%;
+    margin-left:30%
+  /*  float:left; */
+}
+
+
+#images img{
+    width:100%;
+    height:100%;
+}
+
+img .load{
+    width:80%;
+    height:90%;
+}
+
+#controles{
+    margin-top:4%;
+        background:white;
+   /* float:left;
+    margin-right:2%;
+    margin-left:2%; */
+    bac
+}
+
+
+#fotos{
+  /*  float:left; */
+    margin-top:4%;
+    margin-left:2%;
+        background:white;
+}
+
+/*.menu-item {
+    color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.light-red {
+    background: none repeat scroll 0 0 #fb6648;
+}*/
+
+button{
+    border: 2px solid rgba(255, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+#menu a{
+   text-align: right; 
+   float:left;
+    margin-left:90%;
+    margin-right:10%;
+}
+
+#pie{
+    background:white;
+}
+#pie p{
+    text-align:center;
+    margin-bottom:2%;
+}
+
+.logo{
+    background:white;
+}
+
+#menu {
+  font-family: "goudy-bookletter-1911-2","Baskerville","Georgia", serif;
+  overflow: hidden;
+  /*text-align: center;
+  margin: 100px auto;
+  padding: 20px;
+  width: 440px; */
+  float:auto;
+  z-index: 2;
+  font-size: 16px;
+  color: black;
+
+  border: 2px solid rgb(21,11,11);
+  border-radius: 15px;
+  -moz-border-radius:15px;
+ 
+  box-shadow: 0px 0px 20px rgba(255,255,255,1);
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,1),
+                     0px 0px 20px rgba(255,255,255,1);
+
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,1),
+                  0px 0px 20px rgba(255,255,255,1);
+
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#444444), to(#999999));
+  background-image: -moz-linear-gradient(0% 100% 90deg, #999999, #444444);
+
+  border: 2px solid rgb(127, 0, 0);
+  border: 2px solid rgba(255, 0, 0, 0.2);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}

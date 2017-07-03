@@ -1,4 +1,11 @@
 /* ZONA DEL MAPA */
+
+// código para llmar a las librerías añadidas.
+function onDeviceReady() { };
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+
 jQuery(document).ready(function() {
 
 $("#games").hide();
